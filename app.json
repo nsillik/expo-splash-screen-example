@@ -1,23 +1,39 @@
 {
-  "expo": {
-    "name": "splash-screen-example",
-    "description": "An empty new project",
-    "slug": "splash-screen-example",
-    "privacy": "public",
-    "sdkVersion": "20.0.0",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "primaryColor": "#cccccc",
-    "icon": "./assets/icons/app-icon.png",
-    "loading": {
-      "icon": "./assets/icons/loading-icon.png",
-      "hideExponentText": false
-    },
-    "packagerOpts": {
-      "assetExts": ["ttf", "mp4"]
-    },
-    "ios": {
-      "supportsTablet": true
+    "expo": {
+        "android": {
+            "package": "org.sillik.expo.splash-screen-example"
+        },
+        "description": "An empty new project",
+        "icon": "./assets/icons/app-icon.png",
+        "ios": {
+            "bundleIdentifier": "org.sillik.expo.splash-screen-example",
+            "supportsTablet": true
+        },
+        "loading": {
+            "backgroundColor": "#FF0000",
+            "hideExponentText": false,
+            "icon": "./assets/icons/loading-icon.png",
+            "splash": {
+                "backgroundColor": "#FBFFC0",
+                "image": {
+                    "ios": {
+                        "backgroundImage": "./assets/images/splash.png"
+                    }
+                }
+            }
+        },
+        "name": "splash-screen-example",
+        "orientation": "portrait",
+        "packagerOpts": {
+            "assetExts": [
+                "ttf",
+                "mp4"
+            ]
+        },
+        "primaryColor": "#cccccc",
+        "privacy": "public",
+        "sdkVersion": "20.0.0",
+        "slug": "splash-screen-example",
+        "version": "1.0.0"
     }
-  }
 }
